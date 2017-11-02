@@ -12,6 +12,7 @@
     src:local('Courier Prime'),url(courier-prime-webfont.woff) format('woff');
 }
 body {
+    margin: 15px;
     line-height: 1.3;
     font-family: "Courier Prime", monospace;
     font-weight: normal;
@@ -19,11 +20,49 @@ body {
     color: whitesmoke;
     white-space: pre-wrap;
 }
+
+#G {
+    white-space: normal;
+}
+#msg {
+    cursor: default;
+    margin: 20px;
+    padding:5px;
+    background: black;
+    border: 2px solid forestgreen;
+    border-radius: 5px;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    z-index: 100;
+}
+
+#G:hover #msg {
+    display: inline;
+}
+
+.pulsate {
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+@keyframes pulsate {
+    0% {opacity: 0.5;}
+    75% {opacity: 1.0;}
+    100% {opacity: 0.5;}
+}
+
   </style>
 </head>
 
-<body>
-<span style="color:lime;">Snooky's Pub (G)</span>
+<body><span style="color:lime;">Snooky's Pub <span id="G"><span class="pulsate">(G)</span>
+<div id="msg">
+<span style="color:whitesmoke">If you can't find a party here, then you just didn't bring one; <br>some of my best memories involve drinking from a paper bag.</span>
+<br><br>
+<span style="color:whitesmoke">     - </span><span style="color:darkcyan">Fiendish, Tue Mar  5 19:41:50 2013</span><span style="color:whitesmoke">.</span>
+</div></span></span>
   You find yourself in a dank room.  It appears to have once been an actual
 pub, but has long since been abandoned.  The only drinking that goes on in
 this place is from a paper bag.  Ever since the arena was built, business

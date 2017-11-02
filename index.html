@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <title>Snooky's Pub</title>
   <style>
-.title {
-    color: lime;
-}
-.desc {
+@font-face {
+    /* Courier Prime font https://quoteunquoteapps.com/courierprime/ */
+    /* SIL Open Font License http://scripts.sil.org/OFL */
+    font-family:'Courier Prime';
+    src:local('Courier Prime'),url(courier-prime-webfont.woff) format('woff');
 }
 body {
-    font-family: Courier, monospace;
-    font-size: 14pt;
+    line-height: 1.3;
+    font-family: "Courier Prime", monospace;
+    font-weight: normal;
     background-color: black;
     color: whitesmoke;
     white-space: pre-wrap;
@@ -21,8 +23,7 @@ body {
 </head>
 
 <body>
-<span class="title">Snooky's Pub (G)</span>
-<div class="desc">
+<span style="color:lime;">Snooky's Pub (G)</span>
   You find yourself in a dank room.  It appears to have once been an actual
 pub, but has long since been abandoned.  The only drinking that goes on in
 this place is from a paper bag.  Ever since the arena was built, business
@@ -30,7 +31,7 @@ has been sour for old Snooky.  He was sure that business would actually pick
 up, but it seems that people interested in blood and gore have no use for
 alcohol.  So now it's Snooky that's picked up.  Snooky's pub is abandoned
 and filled with litter.
-</div>
+
 <span style="color:lime">[ Exits: (east) south ]</span>
 <span style="color:cyan">(C)</span> <span style="color:yellow">A tough looking bodyguard stands here looking for a fight.
 Snooky The Master of the Pub is here.
